@@ -1,7 +1,7 @@
 <?php
 
 if(isset($_POST['submit'])){
-$to = "info@epicblog.net";; // Здесь нужно написать e-mail, куда будут приходить письма
+$to = "help.surwil@yandex.ru";; // Здесь нужно написать e-mail, куда будут приходить письма
 $from = $_POST['email']; // this is the sender's Email address
 $first_name = $_POST['first_name'];
 $subject = "Форма отправки сообщений с сайта";
@@ -15,7 +15,7 @@ $headers2 = "From:" . $to;
 mail($to,$subject,$message,$headers);
 // mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender - Отключено!
 echo "Сообщение отправлено. Спасибо Вам " . $first_name . ", мы скоро свяжемся с Вами.";
-echo "<br /><br /><a href='https://epicblog.net'>Вернуться на сайт.</a>";
+echo "<br /><br /><a href='https://survivors-wild.github.io'>Вернуться на сайт.</a>";
 
 }
 
